@@ -1,0 +1,17 @@
+#cloud-config
+datasource:
+ Ec2:
+  strict_id: false
+ssh_pwauth: no
+users:
+- name: ansible
+  sudo: ALL=(ALL) NOPASSWD:ALL
+  shell: /bin/bash
+  ssh_authorized_keys:
+  - ${ssh_pub_key}
+write_files:
+  - path: /etc/ssh/sshd_config.d/00-customssh.conf
+    content: |
+         Port 43223
+runcmd: 
+  - sudo docker swarm join --token ${swarm_token} ${first_master_int_ip}:2377

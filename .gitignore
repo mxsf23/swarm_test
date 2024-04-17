@@ -1,0 +1,7 @@
+# Keys
+terraform/files/sftest
+terraform/files/sftest.pub
+# Terraform data
+terraform/.terraform
+terraform/terraform.tfvars
+terraform/.terraform.lock.hcl
