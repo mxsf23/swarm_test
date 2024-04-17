@@ -14,4 +14,5 @@ Run:
 Notes:
 
 1. Read YaCloud docs for correct packer configuration
-2. Worker nodes still are deployed with external addresses (someday I'll fix it :) 
+2. Worker nodes still are deployed with external addresses (someday I'll fix it :)
+3. By default - user ```ansible``` is created. And app files are placed in its home folder.   
