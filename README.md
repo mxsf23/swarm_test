@@ -1,4 +1,4 @@
-# Deploy test app via docekr swarm in YaCloud
+# Deploy test app via docker swarm in YaCloud
 
 This is just test.
 
