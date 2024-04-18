@@ -4,7 +4,7 @@ This is just test.
 
 Packer+Terraform+some bash
 
-Just fill in correct creds in provider settings, packer variables and put keys in  ```files```  folder.
+Just fill in correct creds in provider settings, packer variables and put keys in  ```terraform/files```  folder.
 
 Run:
 ``````
